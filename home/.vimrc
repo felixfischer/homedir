@@ -152,6 +152,7 @@ endif
 
 "NERDTree Plugin
 map <leader>n :NERDTreeToggle<cr>
+map <C-n> :NERDTreeToggle<cr>
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
