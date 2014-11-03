@@ -26,6 +26,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # load more config files
 source "$HOME/.aliases";
+source "$HOME/.prompt";
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
