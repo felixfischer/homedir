@@ -34,3 +34,10 @@ shopt -s cdspell;
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+# set paths to python & directories
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export WORKON_HOME=$HOME/ORDNUNG/Workspace/Umgebungen/virtualenv
+export PROJECT_HOME=$HOME/ORDNUNG/Workspace/Projekte/eigene/Code
+source /usr/local/bin/virtualenvwrapper.sh
