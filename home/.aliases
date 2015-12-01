@@ -97,3 +97,6 @@ alias reload="exec $SHELL -l"
 
 # Faster npm for Europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+
+# Protonet SSH access
+alias nodessh='ssh -o "ProxyCommand nc -X connect -x ssh.protonet.info:8022 %h %p" -o "User protonet" -o ServerAliveInterval=15 -o ServerAliveCountMax=3'

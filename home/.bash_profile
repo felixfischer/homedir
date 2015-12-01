@@ -6,3 +6,4 @@
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
+export XML_CATALOG_FILES=/usr/local/etc/xml/catalog

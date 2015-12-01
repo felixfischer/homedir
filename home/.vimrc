@@ -135,6 +135,8 @@ nmap \\ <C-]>
 let mapleader=","
 let g:sparkupExecuteMapping='<D-e>'
 
+map <C-s> :w<cr>
+
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
 " automatically reload vimrc when it's saved

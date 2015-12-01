@@ -5,7 +5,7 @@ source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash";
 homeshick --quiet refresh 2;
 
 # Set PATH
-export PATH="/usr/local/bin:/usr/bin/local:/usr/local/sbin:$HOME/bin:$PATH";
+export PATH="/usr/local/bin:/usr/bin/local:/usr/local/sbin:$HOME/bin:/usr/local/heroku/bin:$PATH";
 
 # Set Editor
 export EDITOR=vim;
@@ -33,3 +33,4 @@ shopt -s cdspell;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
+
