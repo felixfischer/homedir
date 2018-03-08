@@ -1,6 +1,5 @@
 # Use `homeshick` to manage dotfiles
-export HOMESHICK_DIR=/usr/local/opt/homeshick  # when installed with homebrew
-source "/usr/local/opt/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
 homeshick --quiet refresh 2;
 
@@ -53,3 +52,4 @@ export NVM_DIR="$HOME/.nvm"
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f /Users/felix/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /Users/felix/.nvm/versions/node/v8.9.3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
+
