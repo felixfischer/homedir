@@ -26,7 +26,7 @@ ulimit -n 1024;
 
 # load more config files
 source "$HOME/.aliases";
-# source "$HOME/.prompt";
+source "$HOME/.prompt";
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
