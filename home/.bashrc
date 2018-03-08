@@ -40,7 +40,7 @@ shopt -s cdspell;
 # export WORKON_HOME=$HOME/ORDNUNG/Workspace/Umgebungen/virtualenv
 # export PROJECT_HOME=$HOME/ORDNUNG/Workspace/Projekte/eigene/Code
 # source /usr/local/bin/virtualenvwrapper.sh
-source /usr/local/etc/bash_completion.d/pass
+[ -d /usr/local/etc/bash_completion.d ] && source /usr/local/etc/bash_completion.d/*
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
